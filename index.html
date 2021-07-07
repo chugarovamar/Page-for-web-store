@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Online store</title>
+    <link rel = "stylesheet/less" href = "less/styles.less">
+    <script src="js/less.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8c74cbb7f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<header>
+<div class="central-section">
+<img class="header-logo__phones" alt="footer_logo" src="img/logo.svg">
+
+<div class="header-top">
+    
+    <div class="header-top__left">
+        <div class="header-top__left__select-div">
+          <img src="img/point.png" alt="point">
+        <select id="selectItem" class="header-top__left__select">
+            <option id="chel" value="chel">Челябинск</option>
+        </select>
+        </div>
+
+        <a class="header-top__left__link" href="#">Адреса</a>
+        <a class="header-top__left__img" href="#">
+            <img  src="img/yandex_mark.png" alt="yandex_market_img">
+        </a>
+        
+        <nav class="header-top__nav" >
+            <ul class="header-top__ul">
+               <li class="header-top__li"><a class="header-top__link" href="#">Как купить</a></li> 
+               <li class="header-top__li"><a class="header-top__link" href="#">О нас</a></li> 
+               <li class="header-top__li" ><a class="header-top__link" href="#">Акции</a></li> 
+               <li class="header-top__li"><a class="header-top__link" href="#">Контакты</a></li> 
+            </ul>
+            <ul class="header-top__dropdown-menu">
+             <li> <a class="header-top__dropdown-link"> Информация<i class="fa fa-angle-down"></i></a>
+              <ul class="header-top__dropdown__submenu">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+            </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-top__right">
+       <p class="header-top__txt"> с 7:00 до 20:00</p> 
+       <address class="header-top___tel">
+            <i class="fas fa-phone-alt"></i>
+            <a class="header-top__tel__link" href="tel: ">+7 351 701 40 87</a>
+       </address>
+     <div class="header-top__right__link-div">
+       <a class="header-top__right__link" href="#"><img src="img/whatsapp_logo.png" alt="whatsapp_logo" ></a>
+       <a class="header-top__right__link"  href="#"><img src="img/viber_logo.png" alt="viber_logo" ></a>
+       <a class="header-top__right__link"  href="#"><img src="img/teleg_logo.png" alt="telegramm_logo" ></a>
+       </div>
+     </div>
+</div>
+
+
+<div class="header-main">
+    
+  <div class="header-main__logo-div">
+    <img class="header-main__logo" alt="logo_comp" src="img/logo.svg">
+    <img class="header-main__logo-txt"  alt="logo_comp_txt" src="img/logo_txt.svg">
+  </div>
+  <div class="header-main__search-form">
+  <input class="header-main__search-form__input" type="search" placeholder="Искать технику">
+  <button class="header-main__search-form__ico" >
+      <i class="fa fa-search"></i>
+  </button>
+  <p class="header-main__search-form__txt">Найти</p> 
+  </div>
+
+  <div class="hamburger-menu">
+    <label class="menu__btn" >
+      <span></span>
+    </label>
+   <p> Меню</p>
+  </div>
+ 
+
+    <ul class="header-main__ul">
+    <li class="header-main__li compare">
+       <a class="header-main__li__link ">
+            <img  class="header-main__img" alt="logo_li_compare" src="img/ico.svg">
+          <p>  Сравнение</p>
+       </a>
+   </li>
+   <li class="header-main__li favorites">
+    <a class="header-main__li__link ">
+        <img  class="header-main__img" alt="logo_li_favorite" src="img/best.svg">
+        <p>Избранное</p>
+    </a>
+    <div class="header-main__li__counter-wrapper count-favorites">
+        <span  class="header-main__li__cart-count"> 2 </span>
+    </div>
+   </li>
+   <li class="header-main__li"> 
+     <a class="header-main__li__link profile">
+        <img  class="header-main__img" alt="logo_li_profile" src="img/profile.svg">
+       <p> Мой кабинет</p>
+     </a>
+     <a class="header-main__li__link profile-desktop">
+        <img  class="header-main__img" alt="logo_li_profile-desktop" src="img/profile.svg">
+         Кабинет
+     </a>
+    </li>
+    <li class="header-main__li">
+    <a class="header-main__li__link">
+    <img  class="header-main__img" alt="logo_li_basket" src="img/basket.svg">
+      <p> Корзина</p> 
+    </a>
+    <div class="header-main__li__counter-wrapper">
+        <span  class="header-main__li__cart-count"> 2 </span>
+    </div>
+    </li>
+   </ul>
+   
+</div>
+</div>
+
+<div class="header-bottom">
+    <div class="central-section">
+    <img class="header-bottom__logo" alt="logo_ico" src="img/logo-ico.svg">
+    <ul class="header-ul">
+        <li class="header-li">
+            <img src="img/phone.svg" alt="logo_menu-phone">
+            <a href="#">Смартфоны
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </li>
+        <li class="header-li">
+            <img src="img/desktop.svg" alt="logo_menu-desktop">
+            <a href="#">
+            Планшеты и ПК
+            <i class="fa fa-angle-down"></i>
+            </a>
+        </li>
+        <li class="header-li">
+            <img src="img/watch.svg" alt="logo_menu-watch">
+            <a href="#">Умные устройства
+            <i class="fa fa-angle-down"></i>
+            </a>
+        </li>
+        <li class="header-li">
+            <img src="img/gadget.svg" alt="logo_menu-gadget">
+            <a href="#">Гаджеты
+            <i class="fa fa-angle-down"></i>
+            </a>
+        </li>
+        <li class="header-li audio">
+            <img src="img/audio.svg" alt="logo_menu-audio">
+            <a href="#">Аудиотехника
+            <i class="fa fa-angle-down"></i>
+            </a>
+        </li>
+        <li class="header-li">
+            <img src="img/other.svg" alt="logo_menu-other">
+            <a href="#">Другое
+            <i class="fa fa-angle-down"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="header-bottom__dropdown-menu">
+        <li> <a class="header-bottom___dropdown-link"> Каталог<i class="fa fa-angle-down"></i></a>
+         <ul class="header-bottom___dropdown__submenu">
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+       </li>
+    </ul>
+    
+    <form class="header-bottom__search-form">
+     <input class="header-bottom__search-form__input"  type="text" placeholder="Искать технику">
+     <button type="submit" class="header-bottom__search-form__ico" >
+            <i class="fa fa-search"></i>        
+     </button>
+     <p class="header-bottom__search-form__txt">Найти</p>
+    </form>
+    <button class="header-bottom__info">
+     <img alt="img_server"  src="img/server-name.svg">
+    </button>
+</div>
+</div>
+
+
+<div class="header-nav-section">
+    <div class="central-section">
+            <nav class="header-nav-section__navigation " aria-label="breadcrumb">
+                <ul class=" header-nav-section__ul breadcrumb">
+                  <li class="breadcrumb-li"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-li"><a href="#">Сравнение товаров</a></li>
+                </ul>
+              </nav>
+        <h3 aria-current="page" class="header-nav-section__navigation__head">Сравнение товаров</h3>
+    </div>
+</div>
+</header>
+
+<div class="main-section">
+    
+    <div class="central-section">
+    <div  class="compare-section">
+        <table  class="compare-table " >
+            <thead>
+                <tr class="tr-head">
+                    <th class="th-first">
+                     <div class="th-first__div">
+                      <span class="th-first__div__headline">
+                           Для категорий
+                         
+                               <span class=" th-first__div__question tooltip">
+                                <span class="tooltiptext">text</span>
+                               </span>
+                        
+                        </span>
+                         <select class="th-first__div__select" name="select-type" id="input0" >
+                          <option class="th-first__div__option" value="phones" >Смартфоны</option>
+                         </select>
+                        
+                            
+                            <label class="th-first__radio">  
+                                <input  type="radio" class="th-first__input" name="radio_all" value="all" checked="">
+                                 Все характеристики
+                            </label>
+                        
+                       
+                            
+                            
+                            <label  class="th-first__radio">
+                                <input  type="radio" class="th-first__input" name="radio_diff" value="not-equal">
+                                Показать только различия
+                            </label> 
+                        
+                      </div>
+                    </th>
+                    <th class="th-main first-col">
+                     <div class="table-cell__flex">
+                        <img class="compare-table__photo" src="img/phone_1.png" alt="" rel="nofollow">
+                        <div class="compare-table__item-card">
+                          <div class="compare-table__item-card__tag">Смартфоны</div>
+                          <div class="compare-table__item-card__name">Apple iPhone 11 64 Gb (Gold)</div>
+                          <div class="compare-table__item-card__price"><ins>49 999 ₽</ins><del>60 999 ₽</del></div>
+                          <div class="compare-table__item-card__buttons" >
+                              <button class="compare-table__item-card__button" name="basket">В корзину</button>
+                              <button class="compare-table__item-card__button-phones" name="basket_phones"></button>
+                              <button class="compare-table__item-card__button-click" name="basket_one_click"><img alt="tel-ico-btn" src="img/tel-ico.svg">Купить в 1 клик</button>
+                          </div>
+                       </div>
+                       <button class="compare-table__button-delete"><i class="fas fa-times-circle"></i></button>
+                     </div>
+                    </th>
+                    <th class="th-main second-col ">
+                        <div class="table-cell__flex">
+                        <img class="compare-table__photo second" src="img/phone_2.png" alt="" rel="nofollow">
+                        <div class="compare-table__item-card">
+                            <div class="compare-table__item-card__tag">Смартфоны</div>
+                          <div class="compare-table__item-card__name">Xiaomi Redmi Note 8 Pro (blue)</div>
+                          <div class="compare-table__item-card__price"><ins>16 700 ₽</ins><del>19 999 ₽</del></div>
+                          <div class="compare-table__item-card__buttons" >
+                              <button class="compare-table__item-card__button" name="basket">В корзину</button>
+                              <button class="compare-table__item-card__button-phones" name="basket_phones"></button>
+                              <button class="compare-table__item-card__button-click" name="basket_one_click"><img alt="ico_tel" src="img/tel-ico.svg">Купить в 1 клик</button>
+                          </div>
+                        </div>
+                        <button class="compare-table__button-delete"><i class="fas fa-times-circle"></i></button>
+                       </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="compare-section__table-body-default"  >
+                <tr class="row__first-level first-row">
+                    <th >Бонусные рубли</th>
+                    <td>
+                        <div class="row__first-level__div-price">
+                        <span class="row__first-level__span-price">ББ</span>
+                        + 2 000 бонусов
+                        </div>
+                   </td>
+                    <td>
+                        <div class="row__first-level__div-price">
+                        <span class="row__first-level__span-price">ББ</span>
+                         + 1 000 бонусов
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row__first-level">
+                    <th>Акции и специальные предложения</th>
+                    <td>Рассрочка </td>
+                    <td>Скидка 50% на наушники</td>
+                </tr>
+                <tr class="row__first-level">
+                    <th>Наличие</th>
+                    <td>В наличии</td>
+                    <td>От 3 до 5 дней</td>
+                </tr>
+                <tr class="row__first-level second-row" >
+                    <th colspan="3">Основные</th>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Операционная система</td>
+                    <td class="row__first-level__cell">iOS 13</td>
+                    <td class="row__first-level__cell">iOS 13</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Цвет</td>
+                    <td class="row__first-level__cell">золотой</td>
+                    <td class="row__first-level__cell">черный</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Год выпуска</td>
+                    <td class="row__first-level__cell">2019</td>
+                    <td class="row__first-level__cell">2019</td>
+                </tr>
+                <tr class="row__first-level second-row ">
+                    <th  colspan="3">Процессор</th>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Производитель</td>
+                    <td class="row__first-level__cell">Apple</td>
+                    <td class="row__first-level__cell">Apple</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Тип</td>
+                    <td class="row__first-level__cell">A13 Bionic</td>
+                    <td class="row__first-level__cell">A13 Bionic</td>
+                </tr>
+                <tr class="row__first-level second-row ">
+                    <th colspan="3">Экран</th>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Диагональ (дюймов)</td>
+                    <td class="row__first-level__cell">5,8</td>
+                    <td class="row__first-level__cell">5,8</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Тип экрана </td>
+                    <td class="row__first-level__cell">Super Retina XDR</td>
+                    <td class="row__first-level__cell">Super Retina XDR</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Разрешение экрана </td>
+                    <td class="row__first-level__cell">2436×1125 точек</td>
+                    <td class="row__first-level__cell">2436×1125 точек</td>
+                </tr>
+                
+                <tr class="row__first-level second-row" >
+                    <th colspan="3">Камера</th>
+                </tr>
+                <tr class="small-row camera-row">
+                <td class="row__second-level__head">Количество основных камер</td>
+                    <td class="row__first-level__cell">3</td>
+                    <td class="row__first-level__cell">3</td>
+                </tr>
+                <tr class="small-row camera-row">
+                <td class="row__second-level__head">Разрешения основных камер</td>
+                    <td class="row__first-level__cell">12 МПикс, 12 МПикс, 12 МПикс</td>
+                    <td class="row__first-level__cell">12 МПикс, 12 МПикс, 12 МПикс</td>
+                </tr>
+                <tr class="small-row camera-row row-fnct">
+                <td class="row__second-level__head">Функции основной камеры</td>
+                    <td class="row__first-level__cell">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</td>
+                    <td class="row__first-level__cell">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</td>
+                </tr>
+                <tr class="small-row camera-row">
+                <td class="row__second-level__head">Фронтальная камера </td>
+                    <td class="row__first-level__cell">есть</td>
+                    <td class="row__first-level__cell">есть</td>
+                </tr>
+                <tr class="small-row camera-row">
+                <td class="row__second-level__head">Разрешение фронтальной камеры</td>
+                    <td class="row__first-level__cell">12 Мпикс</td>
+                    <td class="row__first-level__cell">12 Мпикс</td>
+                </tr>
+                <tr class="small-row camera-row">
+                <td class="row__second-level__head">Вспышка </td>
+                    <td class="row__first-level__cell">есть, светодиодная</td>
+                    <td class="row__first-level__cell">есть, светодиодная</td>
+                </tr>
+                <tr class="row__first-level second-row " >
+                    <th colspan="3">Память</th>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Встроенная память </td>
+                        <td class="row__first-level__cell">64 Гб</td>
+                        <td class="row__first-level__cell">64 Гб</td>
+                </tr>
+                <tr class="row__first-level second-row " >
+                    <th colspan="3">Питание</th>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Тип разъема для зарядки </td>
+                        <td class="row__first-level__cell">Lightning</td>
+                        <td class="row__first-level__cell">Lightning</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Функция быстрой зарядки </td>
+                        <td class="row__first-level__cell">есть</td>
+                        <td class="row__first-level__cell">есть</td>
+                </tr>
+                <tr class="row__second-level">
+                    <td class="row__second-level__head">Функция беспроводной зарядки </td>
+                        <td class="row__first-level__cell">есть</td>
+                        <td class="row__first-level__cell">есть</td>
+                </tr>
+                
+                <tr class="row__first-level second-row " >
+                    <th colspan="3">Подключение</th>
+                </tr>
+                <tr class="small-row last-row">
+                    <td class="row__second-level__head">Разъем Lightning 8 Pin
+                        <span class=" small-row__question tooltip">
+                            <span class="tooltiptext">4500 мАч - это примерно 30 часов активного использования устройства</span>
+                        </span>
+                    </td>
+                        <td class="row__first-level__cell">есть</td>
+                        <td class="row__first-level__cell">есть</td>
+                </tr>
+                <tr class="small-row last-row">
+                    <td class="row__second-level__head">Разъем для наушников </td>
+                        <td class="row__first-level__cell">Lightning</td>
+                        <td class="row__first-level__cell">Lightning</td>
+                </tr>
+            </tbody>
+
+            <tbody class="compare-section__table-phones">
+                <tr class="compare-section__table-phones__table-headline">
+                    <td colspan="2">
+                        Бонусные рубли <i class="fas fa-chevron-up"></i>
+                   </td>
+                </tr>
+                <tr class="compare-section__table-phones__table-row__small" >
+                    <td class="compare-section__table-phones__table-cell">
+                        <div class="row__first-level__div-price">
+                       <span class="row__first-level__span-price">ББ</span>
+                       + 2 000 бонусов
+                       </div>
+                    </td>
+                    <td class="compare-section__table-phones__table-cell">
+                       <div class="row__first-level__div-price">
+                           <span class="row__first-level__span-price">ББ</span>
+                            + 1 000 бонусов
+                       </div>
+                    </td>
+                </tr>
+                <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Акции и специальные предложения<i class="fas fa-chevron-up special"></i></td></tr>
+                <tr class="compare-section__table-phones__table-row__small">
+                    <td class="compare-section__table-phones__table-cell">Рассрочка </td>
+                    <td class="compare-section__table-phones__table-cell">Скидка 50% на наушники </td>
+                </tr>
+                <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Наличие <i class="fas fa-chevron-up"></i></td></tr>
+               <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">В наличии</td>
+                <td class="compare-section__table-phones__table-cell">От 3 до 5 дней</td>
+               </tr>
+               <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Основные <i class="fas fa-chevron-up"></i></td></tr>
+               <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Операционная система</span>
+                    <p class="compare-section__table-phones__table-cell-txt">iOS 13</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Операционная система</span>
+                    <p class="compare-section__table-phones__table-cell-txt">iOS 13</p>
+                </td>
+                </tr>
+                <tr class="compare-section__table-phones__table-row__small">
+                    <td class="compare-section__table-phones__table-cell">
+                        <span class="compare-section__table-phones__table-cell-headline" >Цвет</span>
+                        <p class="compare-section__table-phones__table-cell-txt">золотой</p>
+                    </td>
+                    <td class="compare-section__table-phones__table-cell">
+                        <span class="compare-section__table-phones__table-cell-headline" >Цвет</span>
+                        <p class="compare-section__table-phones__table-cell-txt">черный</p>
+                    </td>
+                </tr>
+                <tr class="compare-section__table-phones__table-row__small">
+                    <td class="compare-section__table-phones__table-cell">
+                        <span class="compare-section__table-phones__table-cell-headline" >Год выпуска</span>
+                        <p class="compare-section__table-phones__table-cell-txt">2019</p>
+                    </td>
+                    <td class="compare-section__table-phones__table-cell">
+                        <span class="compare-section__table-phones__table-cell-headline" >Год выпуска</span>
+                        <p class="compare-section__table-phones__table-cell-txt">2019</p>
+                    </td>
+                </tr>
+                <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Процессор <i class="fas fa-chevron-up"></i></td></tr>
+               <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Производитель</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Apple</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Производитель</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Apple</p>
+                </td>
+            </tr>
+              <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Тип</span>
+                    <p class="compare-section__table-phones__table-cell-txt">A13 Bionic</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Тип</span>
+                    <p class="compare-section__table-phones__table-cell-txt">A13 Bionic</p>
+                </td>
+              </tr>
+              <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Экран <i class="fas fa-chevron-up"></i></td></tr>
+            <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Диагональ (дюймов)</span>
+                    <p class="compare-section__table-phones__table-cell-txt">5,8</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Диагональ (дюймов)</span>
+                    <p class="compare-section__table-phones__table-cell-txt">5,8</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Тип экрана </span>
+                    <p class="compare-section__table-phones__table-cell-txt">Super Retina XDR</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Тип экрана </span>
+                    <p class="compare-section__table-phones__table-cell-txt">Super Retina XDR</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разрешение экрана</span>
+                    <p class="compare-section__table-phones__table-cell-txt">2436×1125 точек</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разрешение экрана</span>
+                    <p class="compare-section__table-phones__table-cell-txt">2436×1125 точек</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Камера <i class="fas fa-chevron-up"></i></td></tr>
+            <tr class="compare-section__table-phones__table-row__small camera-row__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Количество основных камер</span>
+                    <p class="compare-section__table-phones__table-cell-txt">3</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Количество основных камер</span>
+                    <p class="compare-section__table-phones__table-cell-txt">3</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small camera-row__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разрешения основных камер</span>
+                    <p class="compare-section__table-phones__table-cell-txt">12 МПикс, 12 МПикс, 12 МПикс</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разрешения основных камер</span>
+                    <p class="compare-section__table-phones__table-cell-txt">12 МПикс, 12 МПикс, 12 МПикс</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small camera-row__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Функции основной камеры</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Функции основной камеры</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small camera-row__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Фронтальная камера</span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Фронтальная камера</span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small camera-row__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разрешение фронтальной камеры
+                    </span>
+                    <p class="compare-section__table-phones__table-cell-txt">12 Мпикс</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разрешение фронтальной камеры
+                    </span>
+                    <p class="compare-section__table-phones__table-cell-txt">12 Мпикс</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small camera-row__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Вспышка
+                    </span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть, светодиодная</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Вспышка
+                    </span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть, светодиодная</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-headline stogare-row__phone" ><td colspan="2">Память <i class="fas fa-chevron-up"></i></td></tr>
+            <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Встроенная память</span>
+                    <p class="compare-section__table-phones__table-cell-txt">64 Гб</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Встроенная память</span>
+                    <p class="compare-section__table-phones__table-cell-txt">64 Гб</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-headline supply-row__phone" ><td colspan="2">Питание <i class="fas fa-chevron-up"></i></td></tr>
+            <tr class="compare-section__table-phones__table-row__small supply-row__small__phone">
+                <td class="compare-section__table-phones__table-cell ">
+                    <span class="compare-section__table-phones__table-cell-headline" >Тип разъема для зарядки</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Lightning</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Тип разъема для зарядки</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Lightning</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small supply-row__small__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Функция быстрой зарядки </span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Функция быстрой зарядки </span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small supply-row__small__phone">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Функция беспроводной зарядки</span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Функция беспроводной зарядки</span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-headline" ><td colspan="2">Подключение <i class="fas fa-chevron-up"></i></td></tr>
+        
+            <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разъем Lightning 8 Pin</span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разъем Lightning 8 Pin</span>
+                    <p class="compare-section__table-phones__table-cell-txt">есть</p>
+                </td>
+            </tr>
+            <tr class="compare-section__table-phones__table-row__small">
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разъем для наушников</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Lightning</p>
+                </td>
+                <td class="compare-section__table-phones__table-cell">
+                    <span class="compare-section__table-phones__table-cell-headline" >Разъем для наушников</span>
+                    <p class="compare-section__table-phones__table-cell-txt">Lightning</p>
+                </td>
+            </tr>
+           
+            </tbody>
+           
+        </table>
+     
+
+    <h5 class="compare-section__headline">Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A) и Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A) - сравнение основных характеристик моделей</h5>
+    <div class="compare-section__footer">
+        <button class="compare-section__footer__button">Очистить список</button>
+        <div class="compare-section__footer__button back-link"><a href="#"> <i class="fas fa-chevron-left"></i>Назад к товаром</a></div>
+    </div>
+    </div> 
+    </div>
+   <div class="communicate-section">
+    <div class="central-section">
+   <div class="communicate-section__left">
+    <picture class="communicate-section__left__img">
+        <source srcset="img/frame.png" media="(min-width:1550px)">
+        <source srcset="img/frame_desktop.png" media="(max-width:1549px)">
+       <img alt="ico-question" src="img/frame.png">
+    </picture>
+    <div class="communicate-section__left__span">
+       <span> Не нашли то что искали?</span>
+        <p>Остались вопросы? Ответим не стесняясь!</p>
+    </div>
+    <p class="communicate-section__left__txt" >Остались вопросы? Ответим не стесняясь!</p>
+  </div>
+  
+    <div class="communicate-section__right">
+    <a class="communicate-section__link" href="#"> Ответы на популярные вопросы</a>
+
+    <input class="communicate-section__input" type="submit" value="Связаться с нами">
+    
+   
+   </div>
+   </div>
+   <div class="storage-section">
+    <div class="central-section">
+
+    </div>
+   </div>
+   </div>
+</div>
+<footer>
+    <div class="central-section">
+    <div class="footer__btn-section">
+    <a href="#" class="footer__link-btn"> Больше товаров</a>
+    </div>
+    <div class="footer-top">
+        <div class="footer-top__logo-section">
+        <img class="footer-top__logo" alt="footer-logo_comp" src="img/logo.svg">
+        <img class="footer-top__logo-txt" alt="footer-logo_comp-txt" src="img/logo_txt.svg">
+        </div>
+
+        <div class="footer-top__right">
+        <div class="footer-top__link">
+        <address class="footer-top___tel">
+            <a href="tel:# ">+7 351 701 40 87</a>
+        </address>
+        <p class="footer-top__txt"> Ежедневно 10:00-21:00</p>
+       </div>
+       <button class="footer-top__button" ><i class="fas fa-phone-alt"></i> Заказать звонок</button>
+        <div class="footer-top__media">
+       <a href="#"><img src="img/footer_viber.svg" alt="viber_ico"></a>
+       <a href="#"><img src="img/footer_wa.svg" alt="whatsapp_ico"></a>
+       <a href="#"><img src="img/footer_tg.svg" alt="tg_ico"></a>
+        </div>
+      
+        </div>
+     </div>
+    <div class="footer__main-section hide">
+        <div class="footer__main-section__logos">
+        <img class="footer__main-section__logo" alt="footer_logo-comp" src="img/logo.svg">
+        <img class="footer__main-section__logo-txt " src="img/logo_txt.svg" alt="footer_logo-comp-txt">
+       </div>
+        <picture class="footer__main-section__img-yandex">
+            <source srcset="img/yandex_png.png" media="(min-width:768px)">
+            <source srcset="img/yandex_footer.png" media="(max-width:767px)">
+             <img  src="img/yandex_png.png" alt="yandex-img">
+        </picture>
+         <div class="footer__main-section__div">
+             <p class="footer__main-section__txt-payment">Принимаем к оплате</p>
+             <img class="footer__main-section__img-payment" src="img/payment.png" alt="payment-img">
+         </div>
+        <small class="footer__main-section__small-auth tablets-size"> Design by <img class="footer__main-section__img-logo" src="img/logo_comp.svg" alt="comp-logo_prod"></small>
+        
+        <div class="footer__main-section__links">
+        <div class="footer__main-section__link">
+        <address class="footer__main-section___tel">
+            <a href="tel: ">+7 351 701 40 87</a>
+        </address>
+        <p class="footer__main-section__txt"> Ежедневно 10:00-21:00</p>
+       </div>
+       <button class="footer__main-section__button" ><i class="fas fa-phone-alt"></i> Заказать звонок</button>
+        <div class="footer__main-section__media">
+       <a href="#"><img src="img/footer_viber.svg" alt="viber_ico-hide"></a>
+       <a href="#"><img src="img/footer_wa.svg" alt="whatsapp_ico-hide"></a>
+       <a href="#"><img src="img/footer_tg.svg" alt="tg_ico-hide"></a>
+        </div>
+        </div>
+        
+      <div class="footer__main-section__div-copyright">
+        <div class="footer__main-section__desc">
+         <small class="footer__main-section__small">2012-2020 © Белая Техника</small>
+         <span class="footer__main-section__txt">Интернет-магазин Белая Техника — российская розничная торговая сеть по продаже современной электроники.</span>
+         </div>
+         <small class="footer__main-section__small-auth small-sizes"> Design by <img class="footer__main-section__img-logo" src="img/logo_comp.svg" alt="comp-logo_prod-comp"></small>
+      
+      </div>
+      </div>
+    
+    <div class="footer-bottom">
+     <div class="footer-bottom__list main">
+         <small class="main-bottom__small">2012-2020 © Белая Техника</small>
+         <div class="main-bottom__txt">Интернет-магазин Белая Техника — российская розничная торговая сеть по продаже современной электроники.</div>
+         <a href="#" class="main-bottom__link-yandex">
+           <img class="main-bottom__img-yandex" src="img/yandex_footer.png" alt="yandex-logo">
+        </a>
+         <div class="main-bottom__div">
+             <p class="main-bottom__txt-payment">Принимаем к оплате</p>
+             <img class="main-bottom__img-payment" src="img/payment.png" alt="payment-logo">
+         </div>
+         <small class="main-bottom__small-auth"> Design by <img class="main-bottom__img-logo" src="img/logo_comp.svg" alt="comp-logo_prod-bottom"></small>
+
+     </div>
+     <div class="footer-bottom__list footer-navigation">
+        <p class="footer-bottom__headline"> Каталог</p>
+        <ul class="footer-bottom__ul">
+
+            <li class="footer-bottom__li"><a href="#">Смартфоны</a></li>
+            <li class="footer-bottom__li"><a href="#">Планшеты и компьюетры</a></li>
+            <li class="footer-bottom__li"><a href="#">Умные часы и браслеты</a></li>
+            <li class="footer-bottom__li"><a href="#">Гаджеты</a></li>
+            <li class="footer-bottom__li"><a href="#">Аудиотехника</a></li>
+            <li class="footer-bottom__li"><a href="#">Другое</a></li>
+            <li class="footer-bottom__li"><a href="#">Топ гаджеты</a></li>
+            <li class="footer-bottom__li hide-item"><a href="#">Сервисный центр</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-bottom__list footer-navigation">
+        <p class="footer-bottom__headline">Информация</p>
+        <ul class="footer-bottom__ul">
+            <li class="footer-bottom__li"><a href="#">О нас</a></li>
+            <li class="footer-bottom__li"><a href="#">Как купить</a></li>
+            <li class="footer-bottom__li"><a href="#">Акции</a></li>
+            <li class="footer-bottom__li"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+        <div class=" footer-bottom__list links">
+            <p class="footer-bottom__headline"> Мы на связи</p>
+            <a class="footer-bottom__links__item first_item"><img  class="footer-bottom__links__item-img" src="img/yandex_logo-small.svg" alt=""> Яндекс.Дзен</a>
+            <a class="footer-bottom__links__item"><img class="footer-bottom__links__item-img" src="img/footer-white_logo.svg" alt="">Белый Сервис</a>
+            <div class="footer-bottom__links__media">
+                <a class="footer-bottom__links__link inst"><img src="img/inst_footer.svg" alt="inst_logo"></a>
+                <a class="footer-bottom__links__link vk"><img src="img/vk_footer.svg" alt="vk_logo"></a>
+            </div>
+        </div>
+        <div class="footer-bottom__list addresses">
+            <p class="footer-bottom__headline">Адреса</p>
+            <address class="footer-bottom__addresses__item first_item"><img src="img/point.png" alt="point_address">Энгельса, д. 75</address>
+            <address class="footer-bottom__addresses__item"><img src="img/point.png" alt="point_address-2">Энгельса, д. 30</address>
+            <address class="footer-bottom__addresses__item"><img src="img/point.png" alt="point_address-3">Ун. Набережная, д. 80</address>
+            <button class="footer-bottom__addresses__button"  type="button"> На карте</button>
+
+        </div>
+
+
+    </div>
+    </div>
+
+</footer>
+</body>
+
+</html>
+
+       
